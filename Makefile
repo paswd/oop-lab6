@@ -4,7 +4,7 @@ COMPILLER=g++
 all: start
 
 start: geometry.o allocator.o figure.o square.o trapeze.o rectangle.o TStackItem.o TStack.o main.o
-	$(COMPILLER) $(FLAGS) -o oop-lab6 geometry.o figure.o square.o trapeze.o rectangle.o TStackItem.o TStack.o main.o
+	$(COMPILLER) $(FLAGS) -o oop-lab6 geometry.o allocator.o figure.o square.o trapeze.o rectangle.o TStackItem.o TStack.o main.o
 
 main.o: main.cpp
 	$(COMPILLER) -c $(FLAGS) main.cpp

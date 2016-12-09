@@ -99,5 +99,6 @@ void Allocator::Free(void *pointer) {
 				found = true;
 			}
 		}
+		ths_ptr = ths_ptr->Child;
 	}
 }

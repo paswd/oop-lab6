@@ -8,6 +8,9 @@ template <class T> TStackItem<T>::TStackItem(const std::shared_ptr<T>& item) {
 	this->next = NULL;
 	std::cout << "Stack item: created" << std::endl;
 }
+
+template <class T> Allocator TStackItem<T>::allocator{};
+
 template <class T> std::shared_ptr<TStackItem<T>>
 TStackItem<T>::SetNext(std::shared_ptr<TStackItem<T>> &next) {
 	std::shared_ptr<TStackItem<T>> old = this->next;
