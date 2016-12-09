@@ -27,6 +27,6 @@ public:
 private:
 	std::shared_ptr<T> item;
 	std::shared_ptr<TStackItem<T>> next;
-	static Allocator allocator;
+	static Allocator allocator; //Аллокатор
 };
 #endif /* TSTACKITEM_H */
