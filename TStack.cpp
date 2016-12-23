@@ -43,14 +43,6 @@ template <class T> TStack<T>::~TStack() {
 }
 
 
-extern "C" Vector* new_vector() {
-    return new Vector;
-}
-extern "C" void delete_vector(Vector *tmp) {
-    delete tmp;
-}
-
-
 template class TStack<Figure>;
 template std::ostream& operator<<(std::ostream& os, const TStack<Figure>&
 stack);
